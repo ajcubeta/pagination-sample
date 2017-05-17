@@ -5,7 +5,7 @@ class App extends React.Component {
     constructor() {
         super();
 
-        var exampleItems = _.range(1, 151).map(i => { return { id: i, name: 'ajcubeta ' + i }; });
+        var exampleItems = _.range(1, 151).map(i => { return { id: i, name: 'Andre ' + i }; });
 
         this.state = {
             exampleItems: exampleItems,
@@ -24,7 +24,7 @@ class App extends React.Component {
             <div>
                 <div className="container">
                     <div className="text-center">
-                        <h1>Pagination Example</h1>
+                        <h1>Pagination Sample</h1>
                         {this.state.pageOfItems.map(item =>
                             <div key={item.id}>{item.name}</div>
                         )}
