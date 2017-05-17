@@ -5,10 +5,10 @@ class App extends React.Component {
     constructor() {
         super();
 
-        var exampleItems = _.range(1, 151).map(i => { return { id: i, name: 'Andre Joseph ' + i }; });
+        var sampleItems = _.range(1, 151).map(i => { return { id: i, name: 'Andre Joseph ' + i }; });
 
         this.state = {
-            exampleItems: exampleItems,
+            sampleItems: sampleItems,
             pageOfItems: []
         };
 
@@ -24,11 +24,11 @@ class App extends React.Component {
             <div>
                 <div className="container">
                     <div className="text-center">
-                        <h1>Pagination Sample using React</h1>
+                        <h1>Pagination Sample</h1>
                         {this.state.pageOfItems.map(item =>
                             <div key={item.id}>{item.name}</div>
                         )}
-                        <Pagination items={this.state.exampleItems} onChangePage={this.onChangePage} />
+                        <Pagination items={this.state.sampleItems} onChangePage={this.onChangePage} />
                     </div>
                 </div>
             </div>
