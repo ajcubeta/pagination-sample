@@ -87,10 +87,12 @@ class Pagination extends React.Component {
           <a onClick={() => this.setPage(pager.currentPage + 1)}>&gt;</a>
         </li>
         <li>
-          <form onSubmit={this.handleSubmit}>
-					<input type="text" value={this.state.value} onChange={this.handleChange} />
-						<input type="submit" value="Submit" />
-					</form>
+          <span>
+            <form onSubmit={this.handleSubmit}>
+              <input type="text" value={this.state.value} onChange={this.handleChange} />
+						  <input type="submit" value="Go" />
+            </form>
+          </span>
         </li>
       </ul>
     );
