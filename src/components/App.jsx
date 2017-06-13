@@ -4,14 +4,14 @@ import Pagination from './Pagination';
 class App extends React.Component {
   constructor() {
     super();
-    
+
     var sampleItems = _.range(1, 151).map(i => { return { id: i, name: 'Andre Joseph ' + i }; });
-    
+
     this.state = {
       sampleItems: sampleItems,
       pageOfItems: []
     };
-    
+
     this.onChangePage = this.onChangePage.bind(this);
   }
 
