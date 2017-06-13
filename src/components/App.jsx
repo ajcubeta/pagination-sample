@@ -5,7 +5,7 @@ class App extends React.Component {
   constructor() {
     super();
 
-    var sampleItems = _.range(1, 151).map(i => { return { id: i, name: 'Andre Joseph ' + i }; });
+    var sampleItems = _.range(1, 123).map(i => { return { id: i, name: 'Andre Joseph ' + i }; });
 
     this.state = {
       sampleItems: sampleItems,
