@@ -39,9 +39,10 @@ class Pagination extends React.Component {
   getPager(totalItems, currentPage, pageSize) {
     currentPage = currentPage || 1;
     pageSize = pageSize || 10;
-    var totalPages = Math.ceil(totalItems / pageSize);
 
+    var totalPages = Math.ceil(totalItems / pageSize);
     var startPage, endPage;
+
     if (totalPages <= 10) {
       startPage = 1;
       endPage = totalPages;
@@ -77,7 +78,7 @@ class Pagination extends React.Component {
 
   render() {
     var pager = this.state.pager;
-
+    console.log(pager);
     return (
       <ul className="pagination">
         <li className={pager.currentPage === 1 ? 'disabled' : ''}>
